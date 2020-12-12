@@ -28,5 +28,7 @@ def configure_routes(app):
         else:
             return 'Bad Request', 400
 
+configure_routes(app)
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=5001)
